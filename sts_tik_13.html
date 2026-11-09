@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>STS-91-13-GABRIELLA</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="sts_tik_13.css">
+</head>
+<body>
+
+    <video autoplay loop muted playsinline id="bgVideo">
+        <source src="videoplayback.mp4" type="video/mp4">
+    </video>
+
+    <audio id="bgAudio" autoplay loop muted preload="auto">
+    <source src="Cantata, BWV 147_ Jesu, Joy of Mans Desiring.mp3" type="audio/mpeg">
+    </audio>
+
+    <script>
+    const audio = document.getElementById('bgAudio');
+    function startAudio() {
+        audio.muted = false;
+        audio.play();
+    }
+    ['mousemove', 'touchstart', 'click', 'scroll'].forEach(evt => {
+        window.addEventListener(evt, startAudio, { once: true });
+    });
+    </script>
+
+    <a href="#mapsModal" class="screen-horse-btn" title="Klik untuk lihat peta!">
+        <span class="horse-label">Klik Untuk Lihat NIHI Sumba! 🗺️</span>
+        <span class="big-horse">🐎</span>
+    </a>
+
+    <div class="wrapper">
+        
+        <header class="header-box">
+            <h1 class="title">NIHI SUMBA</h1>
+            <p class="subtitle">⋆.˚ 𓆉 The Edge of Wildness 𓆝 𓆡⋆.˚</p>
+            <p class="description">Gabriella 91/13</p>
+        </header>
+
+        <section class="card">
+            <h2 class="section-title">Amazing Place</h2>
+            <p>
+                NIHI Sumba merupakan salah satu destinasi wisata mewah yang sangat terkenal di Indonesia bahkan hingga ke mancanegara. Terletak di Pulau Sumba, Nusa Tenggara Timur, tempat ini menawarkan keindahan alam yang sangat menakjubkan dan masih sangat alami. Berbeda dengan tempat wisata pantai lainnya, NIHI Sumba menggabungkan konsep kemewahan resor kelas dunia dengan kebudayaan lokal masyarakat Sumba yang sangat kaya.
+            </p>
+        </section>
+
+        <section class="card media-card">
+            <div class="img-box">
+                <img src="TAL-header-aerial-nihi-sumba-NIHISUMBA0825-b71335ef8fc54acf9cc4ce9d01d2f0f7.jpg" alt="Pantai Nihi Sumba">
+                <div class="img-caption">Pantai & Ombak NIHI Sumba</div>
+            </div>
+            <div class="text-content">
+                <h2 class="section-title">Pesona Pantai Sumba</h2>
+                <p>
+                    Daya tarik utama dari NIHI Sumba adalah suasana pantainya yang tenang dan privasi yang sangat terjaga. Tempat ini sangat cocok bagi orang-orang yang ingin melarikan diri dari keramaian kota. Gelombang laut di sekitar pantai ini juga sangat disukai oleh para peselancar profesional. Ombak yang terkenal dengan sebutan Occy’s Left menjadi salah satu titik berselancar terbaik di dunia.
+                </p>
+            </div>
+        </section>
+
+        <section class="card media-card">
+            <div class="img-box">
+                <img src="Nihi_Sumba_Adriana_maria_12-1024x819 (1).jpg" alt="Berkuda di Pantai Sumba">
+                <div class="img-caption">Tradisi Berkuda di Tepi Pantai</div>
+            </div>
+            <div class="text-content">
+                <h2 class="section-title">Tradisi Berkuda</h2>
+                <p>
+                    Salah satu tradisi paling unik dan ikonik yang bisa dijumpai di NIHI Sumba adalah aktivitas berkuda di tepi pantai saat air laut sedang surut. Kuda-kuda lokal Sumba dibiarkan berlari bebas di sepanjang garis pantai berpasir putih. Pengunjung dapat mencoba pengalaman menunggangi kuda menyusuri pantai sambil menikmati angin laut yang segar dan suasana alam yang asri.
+                </p>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2 class="section-title">Keharmonisan Budaya & Masyarakat</h2>
+            <p>
+                Tidak hanya menyajikan keindahan alam, NIHI Sumba juga sangat peduli terhadap kesejahteraan masyarakat lokal melalui berbagai kegiatan sosial. Kehadiran resor ini membantu membuka lapangan pekerjaan serta mendukung pendidikan dan kesehatan anak-anak di sekitar desa. Para tamu yang menginap juga diajak untuk mengenal lebih dekat kebudayaan suku Sumba, seperti melihat rumah adat beratap tinggi dan seni kain tenun ikat tradisional.
+            </p>
+        </section>
+
+    </div>
+
+    <div id="mapsModal" class="modal-overlay">
+        <div class="modal-box">
+            <a href="#" class="close-btn">&times;</a>
+            <h3 class="modal-title">🌍 Peta NIHI Sumba</h3>
+            <div class="iframe-container">
+               <iframe 
+                    src="https://maps.google.com/maps?q=NIHI+Sumba&t=k&z=17&ie=UTF8&iwloc=&output=embed" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let hue = 180;
+        document.addEventListener('mousemove', function(e) {
+            const trail = document.createElement('div');
+            trail.className = 'mouse-trail';
+            trail.style.left = e.clientX + 'px';
+            trail.style.top = e.clientY + 'px';
+            trail.style.backgroundColor = `hsl(${hue}, 100%, 60%)`;
+            hue += 2;
+            if (hue > 210) hue = 170;
+            document.body.appendChild(trail);
+            setTimeout(() => { trail.remove(); }, 500);
+        });
+    </script>
+</body>
+</html>

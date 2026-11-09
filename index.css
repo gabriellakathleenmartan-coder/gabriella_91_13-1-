@@ -1,0 +1,331 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+/*membuat style pada header*/
+.header{
+    background-color: hotpink;
+    padding: 20px;
+    text-align: center;
+}
+/*membuat style pada navigator/topnav*/
+.topnav{
+    overflow: hidden;
+    background-color:aqua
+}
+/*membuat style link pada navigator/topnav*/
+.topnav a{
+    float: left;
+    display: block;
+    color: antiquewhite;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.topnav a:hover{
+    background-color: lemonchiffon;
+    color: black;
+}
+.column{
+    float: left;
+    padding: 10px;
+}
+/*membuat style pada kolom kanan-kiri*/
+.column.side{
+    width: 25%;
+}
+/*membuat style pada kolom tengah*/
+.column.middle{
+    width: 50%;
+}
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.footer{
+    background-color: hotpink;
+    padding: 10px;
+    text-align: center;
+}
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap');
+
+body {
+  background-image: url(e0eb6f7ed0c6dfa0a0174cb632f5a774.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: 'Fredoka', sans-serif;
+  margin: 0;
+  padding: 40px 20px;
+}
+
+.content {
+  background: rgba(255, 150, 206, 0.75);
+  border-radius: 25px;
+  padding: 35px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  width: 80%;
+  max-width: 800px;
+  margin: 0 auto;
+  border: 4px solid #ffffff;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+div.foto {
+  position: relative;
+  width: 200px;
+  height: 300px;
+  border-radius: 20px;
+  overflow: hidden;
+  cursor: pointer;
+  border: 3px solid #ff69b4;
+  box-shadow: 0 0 10px #ff69b4, inset 0 0 10px #ff69b4;
+  transition: all 0.3s ease;
+  /* Memastikan konten di dalamnya selalu rata tengah */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.foto:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 25px #ff1493, inset 0 0 15px #ff1493;
+  border-color: #ff1493;
+}
+
+div.foto img.image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+  border-radius: 16px;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  margin: 0;
+  padding: 0;
+}
+
+div.foto img.top {
+  opacity: 1;
+  z-index: 2;
+}
+
+div.foto img.bottom {
+  opacity: 0;
+  z-index: 1;
+}
+
+div.foto:hover img.top {
+  opacity: 0;
+  transform: scale(1.1);
+}
+
+div.foto:hover img.bottom {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+h2 {
+  text-align: center;
+  color: #ffffff;
+  background: linear-gradient(135deg, #ff66b2, #ff1493);
+  display: block;
+  width: fit-content;
+  margin: 20px auto;
+  padding: 10px 25px;
+  border-radius: 20px;
+  border: 2px solid #ffffff;
+  box-shadow: 0 4px 15px rgba(255, 20, 147, 0.5);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.teks-biodata {
+  color: #ff009d;
+  font-family: sans-serif;
+  line-height: 1.8;
+  font-size: 16px;
+}
+
+.teks-biodata h2 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #ff009d;
+  font-size: 24px;
+  letter-spacing: 1px;
+}
+
+.teks-biodata p {
+  margin: 8px 0;
+  background: rgba(252, 251, 251, 0.486);
+  padding: 8px 12px;
+  border-radius: 10px;
+}
+div.makanan{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    text-align:center;
+}
+img{
+    padding:10px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+div.sushi, div.bakso, div.ayam, div.Boba, div.Kopi, div.Smoothie, div.memasak, div.musik {
+    border-radius:25px;
+    margin-bottom:25px;
+    background-color: rgba(255, 105, 180, 0.35);
+    border: 3px solid #ffffff;
+    box-shadow: 0 0 15px #ff1493, inset 0 0 10px #ff69b4;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+div.sushi p, div.bakso p, div.ayam p, div.Boba p, div.Kopi p, div.Smoothie p, div.memasak p, div.musik p {
+    color: #ffffff;
+    font-weight: bold;
+    text-shadow: 0 0 8px #ff1493, 1px 1px 2px #000000;
+}
+div.sushi{
+    width:280px;
+    height:280px;
+}
+div.sushi:hover{
+    overflow:hidden;
+    transform: scale(1.1);
+    box-shadow: 0 0 25px #ff1493, 0 0 35px #ffffff, inset 0 0 15px #ff1493;
+}
+div.bakso{
+    width:350px;
+    height:280px;
+}
+div.bakso:hover{
+    overflow:hidden;
+    transform: scale(1.1);
+    box-shadow: 0 0 25px #ff1493, 0 0 35px #ffffff, inset 0 0 15px #ff1493;
+}
+div.ayam{
+    width:280px;
+    height:280px;
+}
+div.ayam:hover{
+    overflow:hidden;
+    transform: scale(1.1);
+    box-shadow: 0 0 25px #ff1493, 0 0 35px #ffffff, inset 0 0 15px #ff1493;
+}
+div.minuman{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    text-align:center;
+}
+div.Boba{
+    width:250px;
+    height:280px;
+}
+div.Boba:hover{
+    overflow:hidden;
+    transform: scale(1.1);
+    box-shadow: 0 0 25px #ff1493, 0 0 35px #ffffff, inset 0 0 15px #ff1493;
+}
+div.Kopi{
+    width:330px;
+    height:280px;
+}
+div.Kopi:hover{
+    overflow:hidden;
+    transform: scale(1.1);
+    box-shadow: 0 0 25px #ff1493, 0 0 35px #ffffff, inset 0 0 15px #ff1493;
+}
+div.Smoothie{
+    width:250px;
+    height:380px;
+}
+div.Smoothie:hover{
+    overflow:hidden;
+    transform: scale(1.1);
+    box-shadow: 0 0 25px #ff1493, 0 0 35px #ffffff, inset 0 0 15px #ff1493;
+}
+div.hobi{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    text-align:center;
+}
+div.memasak{
+    width:400px;
+    height:350px;
+}
+div.memasak:hover{
+    overflow:hidden;
+    transform: scale(1.1);
+    box-shadow: 0 0 25px #ff1493, 0 0 35px #ffffff, inset 0 0 15px #ff1493;
+}
+div.musik{
+    width:400px;
+    height:350px;
+}
+div.musik:hover{
+    overflow:hidden;
+    transform: scale(1.1);
+    box-shadow: 0 0 25px #ff1493, 0 0 35px #ffffff, inset 0 0 15px #ff1493;
+}
+
+.footer {
+    background-color: rgb(60, 190, 255);
+    padding: 10px;
+    text-align: center;
+}
+table, td {
+    border:1px solid black;
+}
+table, th {
+    border:1px solid black;
+    text-align: center;
+    height: 30px;
+    background-color: rgb(164, 230, 244);
+}
+table {
+    border-collapse: collapse;
+    width:100%;
+}
+td {
+    background-color: rgb(234, 185, 222);
+}
+ol{
+    border: 1px solid black;
+    background-color:rgb(255, 252, 196);
+    margin: 10px;
+    list-style-position: inside;
+    padding: 15px 30px;
+}
+ol li{
+    border: 1px solid black;
+    padding: 5px;
+    background-color:rgb(255, 252, 196);
+    text-align: justify;
+    margin: 3px 0;
+}
+ul{
+    border: 1px solid black;
+    background-color:  rgb(255, 252, 196);
+    margin: 10px;
+    list-style-position: inside;
+    padding: 15px 30px;
+}
+ul li{
+    border: 1px solid black;
+    padding: 5px;
+    background-color: ivory;
+    text-align: justify;
+    margin: 3px 0;
+}
+li.a {
+    background-color: rgb(255, 252, 196);
+}

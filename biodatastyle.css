@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap');
+
+body {
+  background-image: url(e0eb6f7ed0c6dfa0a0174cb632f5a774.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: 'Fredoka', sans-serif;
+  margin: 0;
+  padding: 40px 20px;
+}
+
+.content {
+  background: rgba(255, 150, 206, 0.75);
+  border-radius: 25px;
+  padding: 35px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  width: 80%;
+  max-width: 800px;
+  margin: 0 auto;
+  border: 4px solid #ffffff;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+div.foto {
+  position: relative;
+  width: 200px;
+  height: 300px;
+  border-radius: 20px;
+  overflow: hidden;
+  cursor: pointer;
+  border: 3px solid #ff69b4;
+  box-shadow: 0 0 10px #ff69b4, inset 0 0 10px #ff69b4;
+  transition: all 0.3s ease;
+  /* Memastikan konten di dalamnya selalu rata tengah */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.foto:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 25px #ff1493, inset 0 0 15px #ff1493;
+  border-color: #ff1493;
+}
+
+div.foto img.image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+  border-radius: 16px;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  margin: 0;
+  padding: 0;
+}
+
+div.foto img.top {
+  opacity: 1;
+  z-index: 2;
+}
+
+div.foto img.bottom {
+  opacity: 0;
+  z-index: 1;
+}
+
+div.foto:hover img.top {
+  opacity: 0;
+  transform: scale(1.1);
+}
+
+div.foto:hover img.bottom {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+h2 {
+  text-align: center;
+  color: #ffffff;
+  background: linear-gradient(135deg, #ff66b2, #ff1493);
+  display: block;
+  width: fit-content;
+  margin: 20px auto;
+  padding: 10px 25px;
+  border-radius: 20px;
+  border: 2px solid #ffffff;
+  box-shadow: 0 4px 15px rgba(255, 20, 147, 0.5);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.teks-biodata {
+  color: #ff009d;
+  font-family: sans-serif;
+  line-height: 1.8;
+  font-size: 16px;
+}
+
+.teks-biodata h2 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #ff009d;
+  font-size: 24px;
+  letter-spacing: 1px;
+}
+
+.teks-biodata p {
+  margin: 8px 0;
+  background: rgba(252, 251, 251, 0.486);
+  padding: 8px 12px;
+  border-radius: 10px;
+}
+div.makanan{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    text-align:center;
+}
+img{
+    padding:10px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+div.sushi, div.bakso, div.ayam, div.Boba, div.Kopi, div.Smoothie, div.memasak, div.musik {
+    border-radius:25px;
+    margin-bottom:25px;
+    background-color: rgba(255, 105, 180, 0.35);
+    border: 3px solid #ffffff;
+    box-shadow: 0 0 15px #ff1493, inset 0 0 10px #ff69b4;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+div.sushi p, div.bakso p, div.ayam p, div.Boba p, div.Kopi p, div.Smoothie p, div.memasak p, div.musik p {
+    color: #ffffff;
+    font-weight: bold;
+    text-shadow: 0 0 8px #ff1493, 1px 1px 2px #000000;
+}
+div.sushi{
+    width:280px;
+    height:280px;
+}
+div.sushi:hover{
+    overflow:hidden;
+    transform: scale(1.1);
+    box-shadow: 0 0 25px #ff1493, 0 0 35px #ffffff, inset 0 0 15px #ff1493;
+}
+div.bakso{
+    width:350px;
+    height:280px;
+}
+div.bakso:hover{
+    overflow:hidden;
+    transform: scale(1.1);
+    box-shadow: 0 0 25px #ff1493, 0 0 35px #ffffff, inset 0 0 15px #ff1493;
+}
+div.ayam{
+    width:280px;
+    height:280px;
+}
+div.ayam:hover{
+    overflow:hidden;
+    transform: scale(1.1);
+    box-shadow: 0 0 25px #ff1493, 0 0 35px #ffffff, inset 0 0 15px #ff1493;
+}
+div.minuman{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    text-align:center;
+}
+div.Boba{
+    width:250px;
+    height:280px;
+}
+div.Boba:hover{
+    overflow:hidden;
+    transform: scale(1.1);
+    box-shadow: 0 0 25px #ff1493, 0 0 35px #ffffff, inset 0 0 15px #ff1493;
+}
+div.Kopi{
+    width:330px;
+    height:280px;
+}
+div.Kopi:hover{
+    overflow:hidden;
+    transform: scale(1.1);
+    box-shadow: 0 0 25px #ff1493, 0 0 35px #ffffff, inset 0 0 15px #ff1493;
+}
+div.Smoothie{
+    width:250px;
+    height:380px;
+}
+div.Smoothie:hover{
+    overflow:hidden;
+    transform: scale(1.1);
+    box-shadow: 0 0 25px #ff1493, 0 0 35px #ffffff, inset 0 0 15px #ff1493;
+}
+div.hobi{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    text-align:center;
+}
+div.memasak{
+    width:400px;
+    height:350px;
+}
+div.memasak:hover{
+    overflow:hidden;
+    transform: scale(1.1);
+    box-shadow: 0 0 25px #ff1493, 0 0 35px #ffffff, inset 0 0 15px #ff1493;
+}
+div.musik{
+    width:400px;
+    height:350px;
+}
+div.musik:hover{
+    overflow:hidden;
+    transform: scale(1.1);
+    box-shadow: 0 0 25px #ff1493, 0 0 35px #ffffff, inset 0 0 15px #ff1493;
+}
+.barbie-rain {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 9999;
+}
+
+.barbie-logo {
+  position: absolute;
+  top: -80px;
+  width: 40px;
+  opacity: 0.85;
+  animation: rain 6s linear infinite;
+  filter: drop-shadow(0 0 2px #ffffff) drop-shadow(0 0 4px #ffffff);
+}
+
+.barbie-logo:nth-child(1)  { left: 5%;   animation-duration: 5s; animation-delay: 0s; }
+.barbie-logo:nth-child(2)  { left: 15%;  animation-duration: 7s; animation-delay: 2.5s; }
+.barbie-logo:nth-child(3)  { left: 25%;  animation-duration: 6s; animation-delay: 1s; }
+.barbie-logo:nth-child(4)  { left: 38%;  animation-duration: 8s; animation-delay: 4s; }
+.barbie-logo:nth-child(5)  { left: 48%;  animation-duration: 5.5s; animation-delay: 0.5s; }
+.barbie-logo:nth-child(6)  { left: 58%;  animation-duration: 7.5s; animation-delay: 3s; }
+.barbie-logo:nth-child(7)  { left: 68%;  animation-duration: 6.5s; animation-delay: 1.5s; }
+.barbie-logo:nth-child(8)  { left: 78%;  animation-duration: 5.2s; animation-delay: 4.5s; }
+.barbie-logo:nth-child(9)  { left: 88%;  animation-duration: 7s; animation-delay: 2s; }
+.barbie-logo:nth-child(10) { left: 95%;  animation-duration: 6s; animation-delay: 3.5s; }
+
+@keyframes rain {
+  0% {
+    top: -80px;
+    transform: rotate(0deg);
+  }
+  100% {
+    top: 105vh;
+    transform: rotate(360deg);
+  }
+}
+body {
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"><path d="M4.5 3L4.5 20.5L9.5 15.5L13.5 22.5L16.5 21L12.5 14L18.5 14L4.5 3Z" fill="%23CCFF00" stroke="%23FFFFFF" stroke-width="1.5" filter="drop-shadow(0px 0px 4px %23CCFF00)"/></svg>') 4 3, auto;
+}
+
+a, button, div.foto, div.sushi, div.bakso, div.ayam, div.Boba, div.Kopi, div.Smoothie, div.memasak, div.musik {
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"><path d="M4.5 3L4.5 20.5L9.5 15.5L13.5 22.5L16.5 21L12.5 14L18.5 14L4.5 3Z" fill="%23CCFF00" stroke="%23FFFFFF" stroke-width="1.5" filter="drop-shadow(0px 0px 4px %23CCFF00)"/></svg>') 4 3, pointer;
+}
